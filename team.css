@@ -1,0 +1,51 @@
+main select {
+    font-size: 20px;
+    align-self: end;
+    margin-right: 20%;
+}
+
+.ucards {
+    display: flex;
+}
+
+.ucards .ucard {
+    background-color: aliceblue;
+    padding-bottom: 16px;
+    margin: 16px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.429);
+}
+
+.ucards .ucard h3 {
+    font-size: 28px;
+}
+.ucards .ucard p {
+    font-size: 20px;
+}
+
+.ucards .ucard img {
+    width: 250px;
+    height: 250px;
+    border-radius: 4px 4px 0 0;
+}
+
+.ucards .ucard .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.ucards .ucard .socials a {
+    padding: 0px 8px;
+    font-size: 24px;
+}
+
+.ucards .ucard .socials a:hover {
+    color: purple;
+    transform: scale(1.11);
+}
+
+.hidden {
+    display: none;
+}
