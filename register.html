@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
     <title>Infotrek</title>
 </head>
 
@@ -37,61 +38,17 @@
             </ul>
         </nav>
     </header>
-    <section class="card" id="card1">
-        <h1>
-            INFOTREK'<b>22</b>
-        </h1>
-        <button class="down">
-            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-        </button>
-    </section>
-    <section class="card" id="card2">
-        <h1>About</h1>
-        <q> Might is Right, But no one wins who does not Fight </q>
-        <br />
-        <br />
-        <div class="about">
-            <p>Infotrek, an Inter-Departmental Technical Symposium, held under ACM, runs over for 2 days, sometime in
-                March-April, bringing in the indigenous minds of the Campus under one roof thereby giving a stiff
-                competition.
-                <br />
-                <br />
-                It is a blend of both Technical and Non-technical events. Technical events comprising of Coding,
-                Web-designing, Hacking, De-bugging, etc. The Non-technical has in its back, events such as Dumb
-                Charades, Quiz, Oratorio, Marketing, etc to test your vocal and managerial skills. And the endeavours
-                are rewarded with cash prizes. Last but not the least, Who is the Star of the Event? The answer to this
-                question hinges on the performance of the best performers in this closing event.
-                <br />
-                <br />
-                Infotrek bridges the gap between all the departments and builds a platform to communicate well among the
-                same. It is not just a meet but 'Fun in the Run'.
-                <br />
-                <br />
-                <a href="#">Read More...</a>
-            </p>
-            <img alt="Infotrek" src="infotrekev.JPG" />
-        </div>
-    </section>
-    <section class="card" id="card3">
-        <h1>Summary</h1>
-        <div class="summary">
-            <div>
-                <h1></i>12 EVENTS</h1>
-                🔥
-            </div>
-            <div>
-                <h1>3 DAYS</h1>
-                📝
-            </div>
-        </div>
-        <a href="#">Know more about our events...</a>
-    </section>
+    <main>
+        <h1>Register</h1>
+        <form>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="number" name="roll" id="roll" placeholder="Phone Number">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="password" name="confirmPass" id="confirmPass" placeholder="Confirm Password">
+            <button type="submit">Submit</button>
+        </form>
+    </main>
     <footer class="card" id="card4">
-        <div class="cta">
-            <a href="#">
-                <button>Register Now</button>
-            </a>
-        </div>
         <div class="foot">
             <div>
                 <h2>INFOTREK</h2>
@@ -156,7 +113,13 @@
             Made with ❤️ by ACM NITT
         </div>
     </footer>
-    <script src="app.js"></script>
+    <script>
+        var nav = document.querySelector("nav");
+        var toggle = document.querySelector("nav .menu");
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    </script>
 </body>
 
 </html>

@@ -6,6 +6,11 @@
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .card {
     width: 100%;
     height: 100vh;
@@ -261,11 +266,13 @@ nav ul li.active:hover {
     padding: 16px;
     width: 50%;
     font-size: 24px;
+    font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
     color: #fcfffd;
     background-color: #e04d4d;
     border: 1px solid #d8d3e4;
+    transition: all 0.3s ease-in-out;
 }
 .foot {
     display: flex;
@@ -290,4 +297,8 @@ nav ul li.active:hover {
 .foot div:nth-child(3) ul {
     display: flex;
     justify-content: space-between;
+}
+
+.cta a button:hover {
+    transform: scale(1.15);
 }
