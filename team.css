@@ -8,44 +8,58 @@ main select {
     display: flex;
 }
 
-.ucards .ucard {
-    background-color: aliceblue;
+.con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ucard {
+    transform-style: preserve-3d;
+    background-color: rgb(255, 255, 255);
     padding-bottom: 16px;
     margin: 16px;
     border-radius: 4px;
     box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.429);
 }
 
-.ucards .ucard h3 {
+.ucard h3 {
     font-size: 28px;
 }
-.ucards .ucard p {
+.ucard p {
     font-size: 20px;
 }
 
-.ucards .ucard img {
+.ucard img {
     width: 250px;
     height: 250px;
     border-radius: 4px 4px 0 0;
 }
 
-.ucards .ucard .socials {
+.ucard .socials {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 16px;
 }
 
-.ucards .ucard .socials a {
+.ucard .socials a{
     padding: 0px 8px;
     font-size: 24px;
 }
 
-.ucards .ucard .socials a:hover {
+.ucard .socials a:hover {
     color: purple;
     transform: scale(1.11);
 }
 
 .hidden {
     display: none;
+}
+
+.paralax {
+    transform: translateZ(30px)
+}
+img.paralax {
+    transform: translateZ(5px);
 }
