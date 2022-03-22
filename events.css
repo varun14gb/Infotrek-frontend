@@ -42,7 +42,7 @@ main .menu span:nth-child(3) {
     width: 100%;
     padding: 16px;
     display: grid;
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
 }
 
@@ -96,17 +96,22 @@ main .menu span:nth-child(3) {
 }
 
 .show {
-    width: 100vw;
+    width: 100%;
     min-height: calc(100vh + 10px);
+    height: 100%;
+    overflow-y: auto;
     position: fixed;
-    top: -10px;
-    left: -10px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     margin: 0;
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
+    border: none;
 }
 
 .show button {
@@ -136,4 +141,10 @@ main .menu span:nth-child(3) {
 .show div a:hover  {
     background-color: violet;
     color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .show div {
+        width: 95%;
+    }
 }
