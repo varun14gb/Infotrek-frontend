@@ -45,3 +45,42 @@ main form button:hover {
     background-color: blueviolet;
     color: white;
 }
+
+@media only screen and (max-width: 1000px) {
+    main form {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 50px;
+    }
+
+    main form {
+        width: 80%;
+    }
+
+    main h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    main {
+        padding: 50px 8px;
+    }
+
+    main form {
+        width: 95%;
+        padding: 30px;
+    }
+
+    main form input, main form button {
+        font-size: 16px;
+    }
+
+    main form button {
+        font-size: 20px;
+    }
+}
