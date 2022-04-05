@@ -46,6 +46,10 @@ main .menu span:nth-child(3) {
     justify-content: center;
 }
 
+.ecards div {
+    transition: all 0s;
+}
+
 .ecard {
     padding: 12px;
     background-color: rgba(35, 35, 35, 0.796);
@@ -87,7 +91,8 @@ main .menu span:nth-child(3) {
 }
 
 .ecard:hover {
-    scale: 1.2;
+    transition: all 1s ease-in-out;
+    transform: scale(1.5);
 }
 
 .ecard div {

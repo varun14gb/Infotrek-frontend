@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <!-- <link
         href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
+    <link href="fonts/batmfa__.ttf" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Infotrek</title>
 </head>
@@ -19,6 +20,7 @@
     <div id="preloader">
         <div id="loader"></div>
     </div>
+    <div id="particles-js"></div>
     <header class="header">
         <div class="logo">
             <a href="/"><i class="fa fa-superpowers" aria-hidden="true"></i></a>
@@ -42,54 +44,65 @@
     </header>
     <section class="card" id="card1">
         <h1>
-            INFOTREK'<b>22</b>
+            <b>INFOTREK</b>'22
         </h1>
+        <p>An Inter-Departmental Technical Symposium</p>
+        <br>
+        <div class="time">
+            <span id="days">
+                <div>10</div>
+                <div>days</div>
+            </span>
+            <span id="hours">
+                <div>13</div>
+                <div>hours</div>
+            </span>
+            <span id="minutes">
+                <div>52</div>
+                <div>minutes</div>
+            </span>
+            <span id="seconds">
+                <div>32</div>
+                <div>seconds</div>
+            </span>
+        </div>
         <button class="down">
             <i class="fa fa-angle-double-up" aria-hidden="true"></i>
         </button>
     </section>
     <section class="card" id="card2">
-        <h1>About</h1>
-        <q> Might is Right, But no one wins who does not Fight </q>
-        <br />
-        <br />
-        <div class="about">
-            <p>Infotrek, an Inter-Departmental Technical Symposium, held under ACM, runs over for 2 days, sometime in
-                March-April, bringing in the indigenous minds of the Campus under one roof thereby giving a stiff
-                competition.
-                <br />
-                <br />
-
-                Infotrek bridges the gap between all the departments and builds a platform to communicate well among the
-                same. It is not just a meet but 'Fun in the Run'.
-                <br />
-                <br />
-                <a href="#">Read More...</a>
-            </p>
-            <img alt="Infotrek" src="infotrekev.JPG" />
-        </div>
-    </section>
-    <section class="card" id="card3">
-        <h1>Summary</h1>
+        <h1>SUMMARY</h1>
         <div class="summary">
-            <div>
-                <h1></i>12 EVENTS</h1>
-                🔥
+            <div class="tevents">
+                <h3>Technical Events</h3>
+                <ul>
+                    <br>
+                    <li> <i class="fa fa-arrow-right" aria-hidden="true"></i>Short Coding</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Long Coding</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Debugging</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Web Development</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Flash Coding</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Rapid Learner</li>
+                    <br>
+                </ul>
             </div>
-            <div>
-                <h1>3 DAYS</h1>
-                📝
+            <div class="tevents">
+                <h3>Non-Technical Events</h3>
+                <ul>
+                    <br>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Zombie Game</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Complete The Picture</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Qwest</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Advertisement War</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Caption It Up</li>
+                    <br>
+                </ul>
             </div>
         </div>
-        <a href="#">Know more about our events...</a>
         <br>
+        <a href="/Infotrek-frontend/register.html"><button class="cta">Register Now</button></a>
     </section>
-    <footer class="card" id="card4">
-        <div class="cta">
-            <a href="#">
-                <button>Register Now</button>
-            </a>
-        </div>
+    <footer id="card3">
         <div class="foot">
             <div>
                 <h2>INFOTREK</h2>
@@ -105,26 +118,6 @@
                 <div>
                     <img src="nittnew.png" alt="nittlogo" />
                 </div>
-            </div>
-            <div>
-                <h2>Quick Links</h2>
-                <ul>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Events</a>
-                    </li>
-                    <li>
-                        <a href="#">Register</a>
-                    </li>
-                    <li>
-                        <a href="#">Team</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
             </div>
             <div>
                 <h2>Socials</h2>
@@ -148,12 +141,11 @@
                 </ul>
             </div>
         </div>
-        <br />
-        <br />
         <div>
             Made with ❤️ by ACM NITT
         </div>
     </footer>
+    <script src="assets/particles.js"></script>
     <script src="app.js"></script>
     <script>
         window.onload = function () {
