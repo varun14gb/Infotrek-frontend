@@ -19,7 +19,7 @@ a {
 
 .card {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #card1 {
@@ -237,6 +237,9 @@ nav ul li.active:hover {
 
 #card3 {
     color: #fcfffd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .summary {
     margin-top: 10%;
@@ -248,9 +251,6 @@ nav ul li.active:hover {
     font-size: 40px;
 }
 #card3 a {
-    position: absolute;
-    margin-top: 160px;
-    left: 45%;
     color: #fcfffd;
     font-size: 20px;
 }
@@ -289,7 +289,7 @@ nav ul li.active:hover {
     text-align: left;
 }
 .foot div:nth-child(1) img {
-    height: 70px;
+    height: 60px;
     background-color: #8b9693;
 }
 
@@ -308,4 +308,173 @@ nav ul li.active:hover {
 
 .cta a button:hover {
     transform: scale(1.15);
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #141918;
+    z-index: 100;
+}
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    animation: spin 2s linear infinite;
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    animation: spin 3s linear infinite;
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 768px)  {
+    #card1 h1 {
+        font-size: 135px;
+    }
+
+    #card2 h1, #card3 h1 {
+        font-size: 80px;
+    }
+    #card2 q {
+        font-size: 28px;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+    .about p {
+        font-size: 18px;
+    }
+
+    .summary {
+        flex-direction: column;
+    }
+
+    .cta a button {
+        width: 70%;
+    }
+
+    .foot {
+        flex-direction: column;
+    }
+    .foot div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot div:nth-child(3) ul li {
+        margin: 0 12px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav .menu {
+        width: 34px;
+        height: 30px;
+        margin-top: 8px;
+    }
+    nav .menu span {
+        width: 34px;
+    }
+    nav .menu span:nth-child(2) {
+        top: 14px;
+        width: 24px;
+    }
+    nav .menu span:nth-child(3) {
+        width: 36px;
+    }
+    nav.active .menu span:nth-child(1) {
+        height: 30px;
+    }
+    nav.active .menu span:nth-child(2) {
+        width: 30px;
+        left: 10px;
+    }
+    nav ul {
+        clip-path: circle(7.5% at 88% 2.6%);
+        margin: -40px 0 0 0;
+    }
+
+    #card1 h1 {
+        font-size: 90px;
+    }
+
+    .down {
+        bottom: 50px;
+    }
+
+    .foot div:nth-child(1) img {
+        height: 50px;
+    }
+
+    #card2 h1, #card3 h1 {
+        font-size: 70px;
+    }
+    #card2 q {
+        font-size: 24px;
+    }
+
+    .about {
+        padding: 0;
+    }
+    .about img {
+        width: 80%;
+    }
+
+    #card2, #card3 {
+        padding: 0;
+    }
+
+    .cta a button {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .foot div:nth-child(1) img {
+        height: 40px;
+    }
 }

@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
     <header class="header">
         <div class="logo">
             <a href="/"><i class="fa fa-superpowers" aria-hidden="true"></i></a>
@@ -281,9 +284,17 @@
                     ecard.classList.remove("show");
                     nav.classList.remove("hidden");
                 });
-                console.log(ecard.id);
+                // console.log(ecard.id);
             });
-        })
+        });
+
+        window.onload = function () {
+            // setTimeout(() => {
+            //     console.log("here")
+            //     document.querySelector("#preloader").style.display = "none";
+            // }, 2000);
+            document.querySelector("#preloader").style.display = "none";
+        }
     </script>
 </body>
 

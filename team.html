@@ -18,6 +18,9 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
     <header class="header">
         <div class="logo">
             <a href="/Infotrek-frontend/"><i class="fa fa-superpowers" aria-hidden="true"></i></a>
@@ -277,6 +280,15 @@
         integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="team.js"></script>
+    <script>
+        window.onload = function () {
+            // setTimeout(() => {
+            //     console.log("here")
+            //     document.querySelector("#preloader").style.display = "none";
+            // }, 2000);
+            document.querySelector("#preloader").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
