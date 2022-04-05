@@ -2,10 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Smooch Sans', sans-serif;
+    font-family: 'ethnocentric rg it', 'Smooch Sans', sans-serif;
+    /* font-size: xx-small; */
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'ethnocentric rg it';
+    src: url(fonts/ethnocentric/ethnocentric\ rg\ it.otf);
+  }
+  
 a {
     text-decoration: none;
     color: inherit;
@@ -80,7 +86,7 @@ a {
 }
 
 #card1 h1 {
-    font-size: 160px;
+    font-size: 135px;
     color: #fcfffd;
     font-weight: 200;
 }
@@ -106,7 +112,7 @@ nav ul {
     height: 100vh;
     clip-path: circle(10% at 90% 3%);
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 100;
     display: flex;
     flex-direction: column;
@@ -209,10 +215,10 @@ nav ul li.active:hover {
     color: #141918;
 }
 #card2 h1, #card3 h1 {
-    font-size: 100px;
+    font-size: 80px;
 }
 #card2 q {
-    font-size: 32px;
+    font-size: 25px;
 }
 
 .about {
